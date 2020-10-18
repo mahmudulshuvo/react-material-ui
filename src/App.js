@@ -13,7 +13,7 @@ import {
     ThemeProvider,
     createMuiTheme,
 } from '@material-ui/core/styles'
-import { green, orange, blue, pink } from '@material-ui/core/colors'
+import { green, orange, blue, pink, red } from '@material-ui/core/colors'
 import Typography from '@material-ui/core/Typography'
 import 'fontsource-roboto'
 import Container from '@material-ui/core/Container'
@@ -44,10 +44,10 @@ const theme = createMuiTheme({
     },
     palette: {
         primary: {
-            main: blue[400],
+            main: orange[400],
         },
         secondary: {
-            main: pink[400],
+            main: red[400],
         },
     },
 })
@@ -82,7 +82,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <Container maxWidth='lg'>
-                <AppBar position='static'>
+                <AppBar position='static' color='secondary'>
                     <Toolbar>
                         <IconButton
                             edge='start'
